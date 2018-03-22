@@ -1,0 +1,20 @@
+.expensive-car {
+  color: #DC143C;
+}
+
+.cheap-car {
+  color: #006400;
+}
+
+.menu {
+  display: inline-block;
+  margin: 1em;
+}
+
+.success {
+  color: #006400;
+}
+
+.error {
+  color: #DC143C;
+}

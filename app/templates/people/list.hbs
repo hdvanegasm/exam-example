@@ -1,0 +1,11 @@
+<ul>
+  {{#each model as |person|}}
+    <li>
+      <p>{{person.name}}</p>
+      <p>{{person.lastName}}</p>
+      <p>{{person.creditCard}}</p>
+    </li>
+  {{/each}}
+</ul>
+
+{{outlet}}

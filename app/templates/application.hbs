@@ -1,5 +1,7 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<ul>
+  <li class='menu'>{{link-to 'Show cars' 'cars'}}</li>
+  <li class='menu'>{{link-to 'Register buyers' 'people.register'}}</li>
+  <li class='menu'>{{link-to 'List buyers' 'people.list'}}</li>
+</ul>
 
 {{outlet}}

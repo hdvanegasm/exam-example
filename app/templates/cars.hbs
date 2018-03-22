@@ -1,0 +1,11 @@
+<ul>
+  {{#each model.cars as |car|}}
+    <!-- Manda la id al contexto del modelo cars.brand -->
+    <li>{{#link-to 'cars.brand' car}}{{car.brand}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+<button type="button" name="button" {{action 'increasePrice'}}>Increase</button>
+Total price: {{totalPrice}}
+
+{{outlet}}
