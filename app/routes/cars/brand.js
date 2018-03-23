@@ -2,7 +2,7 @@ import Route from '@ember/routing/route';
 
 export default Route.extend({
   model({id}) {
-
+    console.log(params);
     // modelFor retorna el modelo de una ruta padre en la jerarquia de rutas
     const cars = this.modelFor('cars').cars;
 
