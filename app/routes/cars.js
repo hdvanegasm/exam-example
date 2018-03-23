@@ -21,6 +21,12 @@ export default Route.extend({
           brand: "Dodge Challenger",
           color: "black",
           price: 1200000
+        },
+        {
+          id: "renault",
+          brand: "Renault 4",
+          color: "red",
+          price: 120000
         }
       ]
     }

@@ -1,11 +1,11 @@
 import Controller from '@ember/controller';
 import {inject as service} from '@ember/service';
 
+
 export default Controller.extend({
 
   // Se hace la inyeccion al servicio
   registeredBuyers: service('registered-buyers'),
-
   // Acciones que se disparan desde la template
   actions: {
     register() {
@@ -24,6 +24,9 @@ export default Controller.extend({
         });
         this.set('response', 'Registration completed');
         this.set('responseClass', 'success');
+        this.set('name', '')
+        this.set('lastName', '');
+        this.set('creditCard', '');
       } else {
         this.set('responseClass', 'error')
         this.set('response', 'There is an error in the registration form');
